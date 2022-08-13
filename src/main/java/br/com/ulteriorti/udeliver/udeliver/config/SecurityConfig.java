@@ -32,8 +32,7 @@ public class SecurityConfig implements WebMvcConfigurer {
     }
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**");// <- assim permite de qualquer origem,
-        // trocar "/**" pelo seu dominio por exemplo "http://meudominio.com"
+        registry.addMapping("/**");// <- assim permite de qualquer origem,// trocar "/**" pelo seu dominio por exemplo "http://meudominio.com"
     }
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
